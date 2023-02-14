@@ -1,0 +1,131 @@
+:root {
+    --yellow: #F6BD60;
+    --navy: #0F4C5C;
+    --purple: #5F0F40;
+    --green: #36827F;
+    --blue: #0D79A7;
+
+}
+@font-face {
+    font-family: 'FrancoisOne';
+    src: url(fonts/FrancoisOne-Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Asap';
+    src: url(fonts/Asap-SemiBold.otf) format('opentype'),
+    url(fonts/Asap-SemiBold.ttf) format('ttf'),
+    url(fonts/Asap-SemiBold.woff) format('woff'),
+    url(fonts/Asap-SemiBold.woff2) format('woff2');
+}
+/* main */
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--navy);
+}
+.main {
+    background-color: white;
+    width: 65%;
+    float:left;
+}
+div.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 75%;
+    margin: 0 auto;
+}
+div > img {
+    margin: 0 auto;
+    width: 100%;
+}
+div.wrapper > div {
+    padding: 5%;
+}
+h1 {
+    font-size: 4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'FrancoisOne';
+    font-weight: 500;
+    text-align: center;
+    background-color: var(--navy);
+    color: white;
+    display: block;
+    padding: 2%;
+    margin: 0 0 5% 0;
+}
+h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'FrancoisOne';
+    font-size: 2.5rem;
+    text-align: center;
+    margin: -25% 0 20% 0;
+    text-shadow:
+    -2px -2px 0 #fff,  
+     2px -2px 0 #fff,
+    -2px  2px 0 #fff,
+     2px  2px 0 #fff;
+}
+.textcolorpurp {
+    color: var(--purple);
+    fill: var(--purple);
+}
+.textcolorblue {
+    color: var(--blue);
+    fill: var(--blue);
+}
+.textcolorgreen {
+    color: var(--green);
+    fill: var(--green);
+}
+.textwhitedisplay {
+    color:white;
+    margin: -10% ;
+}
+/* side */
+aside {
+    height:100vh;
+    width: 35%;
+    float: right;
+}
+.birthday {
+    background-color: var(--yellow);
+    height: 20%;
+    padding: 5%;
+    text-align: center;
+}
+input {
+    width: 50%;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Asap';
+    text-align: center;
+}
+.bagelinfo {
+    background-color: var(--navy);
+    padding: 10% 20%;
+    height: 60%;
+}
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'FrancoisOne';
+    font-size: 2.5rem;
+    text-align: center;
+}
+input {
+    margin: 0 auto;
+}
+p {
+    margin-top: 15% ;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Asap';
+    color: white;
+    line-height: 1.8rem;
+    font-weight: lighter;
+}
+
+.bagelgroup:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%) !important;
+    transition: filter 1000ms;
+}
