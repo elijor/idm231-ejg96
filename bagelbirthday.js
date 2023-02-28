@@ -97,5 +97,4 @@ function playsound() {
 
   const audio = new Audio(fullsound);
   audio.play();
-
 };
