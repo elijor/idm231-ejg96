@@ -85,6 +85,7 @@ function birthdayselect(e) {
         else
             document.getElementsByClassName("bagelgroup").item(x).style.filter = "grayscale(0%)";
     }
+    playsound();
 };
 
 function playsound() {
