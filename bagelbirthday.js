@@ -12,9 +12,9 @@ function Bagel(name, description, image, sound) {
     const imgtype = ".png";
     this.largeimgfull = `${path}${this.image}${imgtype}`;
 
-    giveMeName = function() {
-        console.log(this.fullsound) ;
-    };
+    // giveMeName = function() {
+    //     console.log(this.fullsound) ;
+    // };
 };
 
 let bagels = [];
@@ -32,6 +32,20 @@ bagels.push(new Bagel("Rainbow Bagel", "You're incredibly innovative and creativ
 bagels.push(new Bagel("Sesame Seed Bagel", "You're a pretty straightforward person that enjoys the simple things in life. You have a lot of ideas and great things to share with others in your life.", "Large-Sesame", 11));
 bagels.push(new Bagel("Salt Bagel", "You have high ambitions and are a go getter. You are more material than you'd like to admit, but never gets in the way of accomplishing your goals.", "Large-Salt", 12));
 
+function playsound() {
+  const sound = bagelNum;
+  const soundpath =  "sfx/";
+  const soundtype = ".wav";
+  const fullsound = `${soundpath}${sound}${soundtype}`;
+  const audio = new Audio(fullsound);
+  const audioElement = document.getElementById('audioplayer')
+  console.log(audioElement)
+  audioElement.pause();
+  audioElement.currentTime = 0;
+  audioElement.src = fullsound;
+  audioElement.play();
+};
+
 function clickedBagel(e){
     bagelNum = e.id;
     document.getElementById("largespot").src = bagels[bagelNum].largeimgfull;
@@ -46,7 +60,8 @@ function clickedBagel(e){
     playsound();
 };
 
-function birthdayselect(e) {
+
+function birthdayselect() {
     let date = document.getElementById("start").value;
     let month = parseInt(date.split("-")[1]);
     let day = parseInt(date.split("-")[2]);
@@ -86,15 +101,4 @@ function birthdayselect(e) {
             document.getElementsByClassName("bagelgroup").item(x).style.filter = "grayscale(0%)";
     }
     playsound();
-};
-
-function playsound() {
-  const sound = bagelNum;
-  const soundpath =  "sfx/";
-  const soundtype = ".wav";
-  const fullsound = `${soundpath}${sound}${soundtype}`;
-  console.log(fullsound);
-
-  const audio = new Audio(fullsound);
-  audio.play();
 };

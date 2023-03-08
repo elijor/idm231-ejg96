@@ -27,6 +27,7 @@ body {
     background-color: white;
     width: 65%;
     float:left;
+    height: 100%;
 }
 div.wrapper {
     display: grid;
