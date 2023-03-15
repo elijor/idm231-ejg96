@@ -105,13 +105,62 @@ input {
 .bagelinfo {
     background-color: var(--navy);
     padding: 10% 20%;
-    height: 60%;
+    height: 45%;
 }
 h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-family: 'FrancoisOne';
     font-size: 2.5rem;
     text-align: center;
+}
+
+.tutorial,  .helpexit {
+    position: absolute;
+    bottom: .75rem;
+    right: .75rem;
+    display: inline-block;
+    background-color: var(--yellow);
+    border-radius: 90px;
+    height: 90px;
+    width: 90px;
+}
+
+.helpexit {
+    z-index: 5;
+    display: none;
+}
+
+.helpoverlay {
+    display: none;
+    background-color: #36827F;
+    padding: 3%;
+    position:fixed;
+    z-index: 2;
+    bottom: 3rem;
+    right: 3rem;
+    max-width: 400px;
+}
+
+
+.helpoverlay p {
+    margin: 0;
+}
+
+h3 {
+    position: absolute;
+    top:30%;
+    left:12%;
+    color :var(--navy);
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.helpexit h3 {
+    left:25%;
+    font-size:4em;
+    top:10%
 }
 
 p {

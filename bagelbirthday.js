@@ -102,3 +102,27 @@ function birthdayselect() {
     }
     playsound();
 };
+
+const helpbutton = document.querySelector('.tutorial');
+const helpoverlay = document.querySelector('.helpoverlay');
+const helpexit = document.querySelector('.helpexit');
+
+function openHelp() {
+if (helpoverlay.style.display = "none") {
+        helpoverlay.style.display = "block";
+        helpexit.style.display = "block";
+    } else {
+        helpoverlay.style.display = "none";
+        helpexit.style.display = "none";
+    };
+  };
+
+  function closeHelp() {
+if (helpoverlay.style.display = "block") {
+  helpoverlay.style.display = "none";
+  helpexit.style.display = "none";
+} else {
+  helpoverlay.style.display = "block";
+  helpexit.style.display = "block";
+};
+};
