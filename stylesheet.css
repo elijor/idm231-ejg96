@@ -133,7 +133,7 @@ h2 {
 .helpoverlay {
     display: none;
     background-color: #36827F;
-    padding: 3%;
+    padding: 2%;
     position:fixed;
     z-index: 2;
     bottom: 3rem;
