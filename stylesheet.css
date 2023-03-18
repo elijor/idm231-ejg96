@@ -54,6 +54,11 @@ h1 {
     padding: 2%;
     margin: 0 0 5% 0;
 }
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Asap';
+}
+
 h4 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-family: 'FrancoisOne';

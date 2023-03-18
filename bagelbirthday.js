@@ -12,10 +12,7 @@ function Bagel(name, description, image, sound) {
     const imgtype = ".png";
     this.largeimgfull = `${path}${this.image}${imgtype}`;
 
-    // giveMeName = function() {
-    //     console.log(this.fullsound) ;
-    // };
-};
+}
 
 let bagels = [];
 
